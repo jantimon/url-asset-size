@@ -1,13 +1,14 @@
 {
   "name": "@jantimon/url-asset-size",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "description": "Runs puppeteer to get the size of all javascript and css files of a given url.",
   "bin": {
     "url-asset-size": "dist/index.js"
   },
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "tsup index.ts --format esm"
   },
   "keywords": [],
